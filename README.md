@@ -13,10 +13,14 @@ A handheld featuring an Asteroids-style game built entirely from scratch — cus
 
 The player controls a spaceship using two analog thumbsticks — the left stick moves the ship and the right stick aims and fires. Meteors spawn from the screen edges, vary in size and HP, and the game ends when the ship loses all three lives.
 
-The goal of the project is to develop a finished handheld device. Currently uploaded is the 1st revision of the finished firmware that can be run on the dev device.
+The goal of the project is to develop a finished handheld device. Currently uploaded is the 1st revision of the firmware that can be run on the dev device.
 
 ---
+## Gameplay
 
+https://github.com/user-attachments/assets/294df480-c689-42ea-9c88-54609ee2982e
+
+---
 ## Hardware
 
 | Component | Detail |
@@ -48,7 +52,7 @@ The goal of the project is to develop a finished handheld device. Currently uplo
 
 ## Technical Challenges
 
-- Implemented a Partial Refresh/Dirty Rectangle algorithm to circumvent the 20KB SRAM limitation, enabling a 320x240 UI without a full frame buffer.
+- Implemented a Partial Refresh algorithm to circumvent the 20KB SRAM limitation, enabling a 320x240 UI without a full frame buffer.
 - Avoiding performance dips and lag by using DMA (Direct Memory Access)
 - Writing a fast and reliable ILI9341 driver that doesn't overload the SPI connection by pushing all needed data at once instead of in chunks (also done to prevent tearing or freezing)
 
