@@ -1,0 +1,20 @@
+# --- STM32CubeIDE / Eclipse Build Artifacts ---
+**/Debug/
+**/Release/
+**/*.elf
+**/*.bin
+**/*.hex
+**/*.map
+**/*.list
+**/*.su
+**/*.o
+**/*.d
+
+# --- IDE Specific & User Settings ---
+**/.settings/
+**/*.launch
+**/*.log
+**/.metadata/
+
+# --- CubeMX Temporary Files ---
+**/_backup/
